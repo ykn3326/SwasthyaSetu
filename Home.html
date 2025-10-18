@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Migrant Health Record Management - Home</title>
+  <link rel="stylesheet" href="Home.css" />
+</head>
+<body>
+
+
+  <header>
+    <div class="logo" aria-label="Migrant Health Records logo">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      MHRMS
+    </div>
+    <nav>
+      <button class="home" aria-current="page">Home</button>
+      <a href="Migrantworker.html" role="link">Migrant Portal</a>
+      <a href="Doctor.html" role="link">Doctor Portal</a>
+      <a href="government.html" role="link">Government</a>
+    </nav>
+  </header>
+
+
+  <div class="container">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="icon-row">
+        <div class="icon heart">❤️</div>
+        <div class="icon globe">🌐</div>
+        <div class="icon qr">📱</div>
+      </div>
+      <h1><span class="gradient-text">Migrant Health</span><br/><span>Record Management</span></h1>
+      <p>Secure, digital health records for Kerala's migrant worker population.<br/>Bridging healthcare gaps with QR-based medical identity cards.</p>
+      <div class="button-row">
+        <button id="btn-migrant" class="btn btn-medical"><span>👥</span> Get Your Health Card</button>
+        <button id="btn-doctor" class="btn btn-medical-secondary"><span>✔️</span> Medical Professional</button>
+      </div>
+    </section>
+    
+  
+
+    <!-- Role Selection Section -->
+    <section class="role-selection">
+      <h2>Choose Your <span class="gradient-text">Portal</span></h2>
+      <p>Access specialized features designed for your role in the healthcare ecosystem</p>
+      <div class="role-grid">
+
+
+        <div class="role-card" id="role-migrant">
+          <div class="role-icon">👥</div>
+          <h3>Migrant Worker</h3>
+          <p>Access your health records, get QR health card, view medical history</p>
+          <ul>
+            <li>Digital Health Card</li>
+            <li>QR Code Access</li>
+            <li>Multi-language Support</li>
+            <li>Vaccination Records</li>
+          </ul>
+          <button class="btn btn-medical">Access Portal</button>
+        </div>
+
+
+        <div class="role-card" id="role-doctor">
+          <div class="role-icon">✔️</div>
+          <h3>Doctor / Hospital</h3>
+          <p>Scan QR codes, update patient records, manage treatments</p>
+          <ul>
+            <li>QR Code Scanner</li>
+            <li>Patient Records</li>
+            <li>Treatment Updates</li>
+            <li>Prescription Management</li>
+          </ul><br>
+          <button class="btn btn-medical-secondary" >Access Portal</button>
+        </div>
+
+
+        <div class="role-card" id="role-government">
+          <div class="role-icon">🛡️</div>
+          <h3>Government Official</h3>
+          <p>Monitor public health, view analytics, manage disease outbreaks</p>
+          <ul>
+            <li>Health Analytics</li>
+            <li>Disease Monitoring</li>
+            <li>Population Health</li>
+            <li>Export Reports</li>
+            
+          </ul>
+          
+          <button class="btn btn-medical-success">Access Portal</button>
+        </div>
+
+<!-- 
+        <div class="role-card" id="role-admin">
+          <div class="role-icon">📊</div>
+          <h3>System Admin</h3>
+          <p>Manage users, system configuration, data backup</p>
+          <ul>
+            <li>User Management</li>
+            <li>System Config</li>
+            <li>Data Backup</li>
+            <li>Security Settings</li>
+          </ul><br>
+          <button class="btn btn-medical-ghost">Access Portal</button>
+        </div> -->
+
+
+      </div>
+    </section>
+    
+
+    <!-- Features Section -->
+    <section class="features-section">
+      <h2><span class="gradient-text">Advanced Features</span></h2>
+      <p>Cutting-edge technology for comprehensive health record management</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>QR Health Cards</h3>
+          <p>Instant access to medical records via QR code scanning</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h3>Multi-language Support</h3>
+          <p>Available in Malayalam, Hindi, Bengali, Odia, Assamese, Tamil</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Secure & Private</h3>
+          <p>End-to-end encryption and HIPAA-compliant data protection</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+    <!-- Stats Section -->
+     <footer class="bottom">
+    <section class="stats-section">
+      <div class="stat-card">
+        <div class="stat-icon">👥</div>
+        <div class="stat-value">15,000+</div>
+        <div class="stat-label">Registered Workers</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">❤️</div>
+        <div class="stat-value">45,000+</div>
+        <div class="stat-label">Health Records</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">📱</div>
+        <div class="stat-value">2,847</div>
+        <div class="stat-label">QR Scans Today</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">⚡</div>
+        <div class="stat-value">350+</div>
+        <div class="stat-label">Health Facilities</div>
+      </div>
+    </section>
+  </footer>
+  <script src="home.js"></script>
+</body>
+</html>

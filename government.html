@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Government Dashboard</title>
+  <link rel="stylesheet" href="government.css" />
+</head>
+<body>
+
+
+
+  <header>
+    <div class="logo" aria-label="Migrant Health Records logo">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      MHRMS
+    </div>
+    <nav>
+
+      <a href="Home.html" role="link">Home</a>
+      <a href="Migrantworker.html" role="link">Migrant Portal</a>
+      <a href="Doctor.html" role="link">Doctor Portal</a>
+      <button class="home" aria-current="page">Government Portal</button>
+      <!-- <a href="#" class="emergency" role="button">Emergency</a> -->
+    </nav>
+  </header>
+
+
+  <main>
+    <section aria-label="Government Dashboard Overview" class="dashboard-overview">
+      <h2>Government Dashboard</h2>
+      <p>Real-time health monitoring for migrant worker population</p>
+      <div class="stats">
+        <div class="stat-card">
+          <span class="stat-value">45,000+</span>
+          <span class="stat-label">Total Migrant Workers</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">89,000+</span>
+          <span class="stat-label">Health Records</span>
+        </div>
+        <div class="stat-card alert">
+          <span class="stat-value">23</span>
+          <span class="stat-label">Active Alerts</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">87.5%</span>
+          <span class="stat-label">Vaccination Rate</span>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Active Health Alerts" class="active-alerts">
+      <h3>Active Health Alerts</h3>
+      <ul>
+        <li class="critical">
+          <strong>Dengue Fever</strong> (Infectious Disease) - 15 cases reported <br />
+          Location: Kochi Industrial Area (2 hours ago)
+        </li>
+        <li class="warning">
+          <strong>COVID-19 Booster</strong> (Vaccination Alert) - 200 workers involved <br />
+          Location: Thrissur Construction Sites (5 hours ago)
+        </li>
+        <li class="healthy">
+          <strong>General Checkup</strong> (Health Camp) - 500 workers participated <br />
+          Location: Kollam Port Area (1 day ago)
+        </li>
+      </ul>
+    </section>
+
+    <section aria-label="Regional Overview" class="regional-overview">
+      <h3>Regional Overview</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Region</th>
+            <th>Workers</th>
+            <th>Vaccination Rate</th>
+            <th>Alerts</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kochi</td>
+            <td>12,000</td>
+            <td class="good-rate">89%</td>
+            <td class="critical-alert">8 alerts</td>
+          </tr>
+          <tr>
+            <td>Thrissur</td>
+            <td>8,500</td>
+            <td class="warning-rate">85%</td>
+            <td class="warning-alert">5 alerts</td>
+          </tr>
+          <tr>
+            <td>Kollam</td>
+            <td>7,800</td>
+            <td class="good-rate">90%</td>
+            <td class="warning-alert">3 alerts</td>
+          </tr>
+          <tr>
+            <td>Kannur</td>
+            <td>6,200</td>
+            <td class="good-rate">88%</td>
+            <td class="healthy-alert">2 alerts</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+<!-- pie chart -->
+      <figure class="highcharts-figure">
+        <div id="container"></div>
+        <p class="highcharts-description"></p>
+    </figure>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/themes/adaptive.js"></script>
+
+    <script>
+        Highcharts.chart('container', {
+            chart: {
+                type: 'pie',
+                options3d: {
+                    enabled: true,
+                    alpha: 45,
+                    beta: 0
+                }
+            },
+            title: {
+                text: 'State Disease Dashboard'
+            },
+            // subtitle: {
+            //     text: 'Source: ' +
+            //         '<a href="https://www.counterpointresearch.com/global-smartphone-share/" target="_blank">Counterpoint Research</a>'
+            // },
+            accessibility: {
+                point: {
+                    valueSuffix: '%'
+                }
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    depth: 35,
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.name}'
+                    }
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: 'Share',
+                data: [
+                    ['Asthama', 9],
+                    ['Chickenpox / Smallpox', 18],
+                    {
+                        name: ' Viral Flue',
+                        y: 12,
+                        sliced: true,
+                        selected: true
+                    },
+                    ['Typhoid', 23],
+                    ['Maleriya', 20],
+                    ['Cold and Cough', 30]
+                ]
+            }]
+        });
+    </script>
+
+    <section aria-label="Quick Actions" class="quick-actions">
+      <h3>Quick Actions</h3>
+      <div class="actions-grid">
+        <button class="btn-alert">⚠️ Send Alert</button>
+        <button class="btn-schedule">📅 Schedule Camp</button>
+        <button class="btn-download">⬇️ Generate Report</button>
+        <button class="btn-analytics">📊 View Analytics</button>
+      </div>
+    </section>
+
+    <div class="back-home">
+      <button>← Back to Home</button>
+    </div>
+  </main>
+</body>
+</html>

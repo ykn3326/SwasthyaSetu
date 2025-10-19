@@ -109,9 +109,14 @@ h1 {
   color: white;
   display: flex;
   align-items: center;
-  gap: 8px;
-  user-select: none;
+  justify-content: center;  
+ 
 }
+  .a-tag{
+    color: white;
+    text-decoration: none;
+
+  }  
 
 /* Button Colors */
 .btn-medical {
@@ -327,4 +332,8 @@ h1 {
 .bottom{
   background-color: #68b39d;
   border:2px solid white;
+}
+.home{
+  text-decoration: none;
+  color: white;
 }

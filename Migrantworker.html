@@ -16,7 +16,7 @@
       <a href="Home.html" role="link">Home</a>
        <button class="home" aria-current="page">Migrant worker</button>
       <a href="Doctor.html" role="link">Doctor Portal</a>
-      <a href="government.html" role="link">Government Portal</a>
+      <a href="Governmentlogin.html" role="link">Government Portal</a>
       <!-- <a href="#" class="emergency" role="button">Emergency</a> -->
     </nav>
   </header> 
@@ -29,45 +29,37 @@
         <div class="section-title">Personal Information</div>
         <label for="fullname">Full Name *</label>
         <input id="fullname" type="text" required placeholder="Enter your full name">
-
+          <br><br>
         <label for="aadhaar">Aadhaar Number *</label>
         <input id="aadhaar" type="text" maxlength="12" pattern="\d{12}" required placeholder="Aadhaar Number (12 digits)">
+        <br><br>
 
-        <label for="age">Age *</label>
-        <input id="age" type="number" min="0" required placeholder="Age">
+        <!-- <label for="age">Age *</label>
+        <input id="age" type="number" min="0" required placeholder="Age"> -->
 
-        <label for="gender">Gender *</label>
+        <!-- <label for="gender">Gender *</label>
         <select id="gender" required>
           <option value="">Select gender</option>
           <option>Male</option>
           <option>Female</option>
-          <option>Other</option>
-        </select>
+          <option>Other</option> -->
+           <label for="phone">Phone Number *</label>
 
-        <!-- <label for="blood">Blood Group</label>
-        <select id="blood">
-          <option value="">Select blood group</option>
-          <option>A+</option>
-          <option>A-</option>
-          <option>B+</option>
-          <option>B-</option>
-          <option>O+</option>
-          <option>O-</option>
-          <option>AB+</option>
-          <option>AB-</option>
-        </select> -->
+          <input id="phone" type="tel" required placeholder="+91 XXXXXXXXXX">
+          </select>
+
+      
       </div>
-
+<!-- 
       <div class="section">
         <div class="section-title">Contact Information</div>
-        <label for="phone">Phone Number *</label>
-        <input id="phone" type="tel" required placeholder="+91 XXXXXXXXXX">
+        -->
 
-        <label for="emergency">Emergency Contact</label>
-        <input id="emergency" type="tel" placeholder="Emergency contact number">
+        <!-- <label for="emergency">Emergency Contact</label>
+        <input id="emergency" type="tel" placeholder="Emergency contact number"> -->
       </div>
 
-      <div class="section">
+      <!-- <div class="section">
         <div class="section-title">Location & Language</div>
         <label for="state">Home State *</label>
         <select id="state" required>
@@ -83,9 +75,9 @@
           <option>Hindi</option>
           <option>...</option>
         </select>
-      </div>
+      </div> -->
 
-      <button type="submit" class="main-btn">Generate Health ID Card</button>
+      <button type="submit" class="main-btn">Login</button>
     </form>
   </div>
 </body>

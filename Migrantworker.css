@@ -141,7 +141,11 @@ input:focus, select:focus {
 }
 
 .main-btn {
-  width: 100%;
+  width: 26%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+
   margin-top: 16px;
   border: none;
   border-radius: 9px;
@@ -156,6 +160,7 @@ input:focus, select:focus {
 }
 .main-btn:hover {
   background: #11ddba;
+  
 }
 
 @media (max-width: 440px) {

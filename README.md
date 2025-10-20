@@ -1,2 +1,2 @@
 # SwasthyaSetu
-Thia is for Kerla Migrant Workers.
+This is for Kerla Migrant Workers.
